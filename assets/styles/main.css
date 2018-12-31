@@ -1,0 +1,512 @@
+body {
+    background: linear-gradient(to top right, #669999 0%, #003366 100%);
+    @import url('https://fonts.googleapis.com/css?family=Oxygen:300,400,700');
+    overflow-x: hidden;
+}
+
+a:active, a:focus {
+    outline: 0;
+    border: none;
+}
+
+button:active , button:focus {
+    outline: 0;
+    border: none;
+}
+
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background-color: #6B5B95; 
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #672E3B; 
+};
+
+
+a:active, a:focus {
+    outline: 0;
+    border: none;
+}
+
+
+.navbar {
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    
+}
+
+.navbar-form {
+    width: 100%;
+}
+
+#serachInput {
+    width: 81%;
+    display: inline-block;
+}
+
+#serchRow {
+    float: right;
+}
+
+.nav li{
+    text-align: center;
+}
+
+.navbar-form .form-control {
+    background-color: #696969;
+    color: #fff;
+}
+
+#addButton {
+    width: 100%;
+    float: left;
+    background-color: #0000;
+    color: #fff;
+    border: solid 1px;
+    opacity: 0.6;
+    transition: 0.3s;
+    margin-top: 6px;
+}
+
+#addButton:hover {
+    background-color: #434040;
+    color: #5DADE2;
+    border: solid 1.5px #5DADE2;
+    opacity: 1;
+}
+
+#mainPlaylistContainer {
+    text-align: center;
+    padding-top: 8%;
+    animation: animateElement linear .7s;
+    animation-iteration-count: 1;
+    
+}
+#intoMainPlaylistContainer {
+    background:linear-gradient(to bottom, #282828 41%, #669 100%);
+    border: none;
+    margin-top: 25px;
+    box-shadow: #282828 0px 0px 10px 12px;
+    border-radius: 15px;
+}
+
+
+#headLine {
+    color: #ECF0F1;
+    letter-spacing: 2px;
+    font-weight: 800;
+    font-size: 52px;
+    cursor: pointer;
+}
+
+.editDialog {
+    text-align: center;
+}
+
+#editPlaylist {
+    width: 100%;
+    height: auto;
+}
+
+.editDialog h3 {
+    color: #fff;
+}
+
+.editDialog ul{
+    list-style-type: none;
+}
+
+.playlistSongs .plItem, .songsUl .plItem{
+    transition: 0.5s;
+    border-radius: 30px;
+    margin: 5px;
+    text-align: center;
+    margin-top: 10px;
+    list-style-type: none;
+}
+
+.songsUl .plItem:hover {
+    transition: 0.5s;
+    background-color: #f44542;
+    cursor: pointer;
+    padding-top: 5px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.playlistSongs .plNum {
+    float: left;
+}
+
+
+.dialogDivSongs, .dialogDiv {
+    color: black;
+}
+
+.dialogDivSongs h4, .dialogDivSongs h3 {
+    color: #fff;
+}
+
+.ui-dialog .ui-dialog-titlebar {
+    background-color: #80869e;
+}
+
+.ui-dialog .ui-dialog-buttonpane {
+    background-color: #80869e;
+}
+
+.ui-widget.ui-widget-content {
+    border: 2px solid #0000;
+    background-color: #0000;
+}
+
+.ui-dialog .ui-dialog-titlebar-close {
+    display: none;
+}
+
+#playlist_name {
+    color: black;
+}
+
+#playlist_url {
+    color: black;
+}
+
+.gridView {
+    animation: animateElement linear .7s;
+    animation-iteration-count: 1;
+    width: 220px;
+    height: 220px;
+    text-align: center;
+    margin: 1% 1% 2% 4%;
+    padding: 0;
+    background-size: cover;
+    border-radius: 220px;
+    border: 2px solid transparent;
+    transform: scale(1);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.gridView a {
+    display: none;
+    font-size: 35px;
+    color: #cce8db;
+    transform: scale(1);
+    transform: translate(0px, 0px);
+    transition: 1s;
+    outline: 0;
+}
+
+
+.gridView:hover{
+    transform: scale(1.05);
+    transition: 0.2s;
+}
+
+.gridView .playlistTitle {
+    font-size: 22px;
+    margin-top: 10px;
+    color: #fff;
+}
+
+
+.gridView .glyphicon-remove:hover{
+    color: firebrick;
+    transition: 0.2s;
+    margin-right: 10px;
+    outline: 0;
+}
+.gridView .glyphicon-pencil:hover{
+    color: deepskyblue;
+    transition: 0.2s;
+    margin-right: 10px;
+    outline: 0;
+} 
+.gridView .glyphicon-play-circle:hover{
+    color: mediumseagreen;
+    transform: scale(1.1);
+    transition: 0.2s;
+    margin-right: 10px;
+    outline: 0;
+}
+
+.footer-distributed{
+	background-color: #292c2f;
+	box-shadow: 0px 0px 100px 10px rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+    height: auto;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 55px 50px;
+	margin-top: 20px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+.footer-distributed .footer-left{
+	width: 35%;
+    text-align: center;
+}
+
+.contactInfo {
+    list-style-type: none;
+    padding: 0;
+}
+
+.contactInfo li{
+    width: 29%;
+    display: inline;
+    margin-right: 25px;
+}
+
+.contactInfo a span{
+    color: dimgray;
+    transition: 0.3s;
+    font-size: 35px;
+    margin-top: 15px;
+}
+
+.contactInfo a span:hover {
+    color: aliceblue;
+    transition: 0.3s;
+}
+
+.footer-distributed h3{
+	color:  #ffffff;
+	font: normal 36px 'Cookie', cursive;
+	margin: 0;
+}
+
+.footer-distributed .footer-center{
+	width: 29%;
+    text-align: center;
+}
+
+.footer-distributed .footer-center img{
+    width: 200px;
+    border-radius: 15px;
+    transform: scale(1);
+    transition: 0.5s;
+}
+
+.footer-distributed .footer-center img:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.footer-distributed .footer-right{
+	width: 35%;
+    text-align: center;
+}
+
+.connectInfo {
+    list-style-type: none;
+    padding: 0;
+}
+
+.connectInfo li {
+    width: 29%;
+    display: inline;
+}
+
+.connectInfo img{
+    width: 40px;
+    margin: 10px;
+    transform: scale(1);
+    transition: 0.5s;
+}
+
+.connectInfo img:hover{
+    transform: scale(1.3);
+    transition: 0.5s;
+}
+
+.lowFooter{
+    width: 100%;
+    height: 10%;
+    background-color: #25262d;
+    text-align: center;
+    padding-top: 1%;
+}
+
+.lowFooter p {
+    font-size: 25px;
+    color: black;
+    font-weight: 500;
+}
+/* Footer responsive */
+
+@media (max-width: 1000px) {
+	.footer-distributed{
+		font: bold 16px sans-serif;
+        text-align: center;
+	}
+    
+    .footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+    .footer-distributed .footer-right{
+        width: 27%;
+    }
+    
+    .contactInfo li, .connectInfo li{
+        width: 20%;
+        margin: 1px;
+    }  
+}
+
+@media (max-width: 880px) {
+	.footer-distributed{
+		font: bold 14px sans-serif;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 20px;
+		text-align: center;
+	}
+    
+    .contactInfo span {
+        margin-top: 10px;
+        font-size: 35px;
+    }
+    
+    .contactInfo p{
+        display: none;
+    }
+    .contactInfo li{
+        width: 15%;
+        margin: 1px;
+    }  
+}
+
+@media (max-width: 1500px) and (min-width: 1200px) {
+    .gridView{
+        margin-left: 4%;
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media (max-width: 1200px) and (min-width: 880px) {
+    .gridView{
+        margin-left: 10%;
+        width: 260px;
+        height: 260px;
+    }
+}
+
+@media (max-width: 560px) and (min-width: 450px) {
+    .gridView{
+        margin-left: 17%;
+        width: 270px;
+        height: 270px;
+    }
+    
+    .lowFooter p{
+        font-size: 20px;
+    }
+    
+    #headLine {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 450px) {
+    .gridView {
+        margin-left: 1%;
+        width: 230px;
+        height: 230px;
+    }
+    
+    #headLine {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 380px) {
+    .gridView {
+        margin-left: 3%;
+        width: 230px;
+        height: 230px;
+    }
+    
+    #headLine {
+        font-size: 30px;
+    }
+    
+    .footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 20px;
+		text-align: center;
+	}
+    
+    .contactInfo span {
+        margin-top: 10px;
+        font-size: 35px;
+        margin-left: -40px;
+    }
+    
+    .contactInfo p{
+        display: none;
+    }
+    .contactInfo li{
+        width: 15%;
+        margin: 1px 10px 1px 1px;
+        display: inline-block;
+    }  
+}
+
+@media (max-width: 310px) {
+    .gridView {
+        margin-left: -3%;
+        width: 220px;
+        height: 220px;
+    }
+    
+    #headLine {
+        margin-top: 15%;
+        font-size: 27px;
+    }
+
+    .footer-distributed .footer-center img {
+        width: 180px;
+    }
+    
+    .connectInfo li {
+        display: inline;
+        margin-left: -20px;
+    }
+    
+    .connectInfo img {
+        width: 30px;
+    }
+}

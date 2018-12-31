@@ -1,0 +1,200 @@
+
+#nowPlayingBarContainer {
+    width: 40%;
+    min-height: 50%;
+    max-height: 85%;
+    background-color: #282828;
+    min-width: 150px;
+    border: 1px solid #fff;
+    text-align: center;
+    margin: 5% 30% 1% 30%; 
+    border-radius: 15px;
+    z-index: 998;
+    position: fixed;
+    overflow-x: hidden;
+
+}
+
+#playlist_image {
+    width: 40%;
+    height: 200px;
+    border-radius: 70px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-left: 30%;
+    
+}
+
+#buttonsTop {
+    width: 100%;
+    height: 5%;
+    margin-bottom: 25px;
+    margin-top: 5px;
+}
+
+#closePlaylistBtn {
+    float: right;
+    font-size: 25px
+}
+
+#editPlaylistBtn {
+    float: left;
+    font-size: 25px
+}
+
+audio {
+    margin:0 15px 0 14px;
+    width: 50%;
+}
+
+.add-bottom { 
+    margin-bottom: 2rem !important;
+}
+
+#npAction { 
+    float:left;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 1%;
+}
+#npTitle { 
+    float:right; 
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 2%;
+}
+
+#audiowrap,
+#plwrap {
+    margin:0 auto;
+    text-align: center;
+}
+
+#tracks {
+    position:relative;
+    text-align:center;
+}
+
+#nowPlay {
+    display:block;
+    padding-bottom: 1%;
+}
+
+#plList{
+    width: 100%;
+    height: auto;
+    padding: 0;
+    list-style-type: none;
+}
+
+.plItem {
+    position:relative;
+    padding-top: 2%;
+    margin-top: 1%;
+    text-align: center;
+    color: slategray;
+    font-weight: 400;
+    cursor:pointer;
+    display:block;
+    border-radius: 300px;
+    border-bottom: 1px solid darkgray;
+}
+
+.plItem sapn {
+    padding-left:5px;
+    width:25px;  
+}
+
+.plTitle {
+    top:0;
+    white-space:nowrap;
+    color: #7fffd4;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.plItem:hover {
+    background-color:rgba(0,0,0,.1);
+    border-radius: 30px;
+}
+
+
+
+.plNum {
+    display: none;
+}
+
+.plSel,
+.plSel:hover {
+    background-color:rgba(0,0,0,.1);
+    cursor:default !important;
+    border-radius: 30px;
+}
+
+a[id^="btn"] {
+    border-radius:3px;
+    color:#fff;
+    cursor:pointer;
+    display:inline-block;
+    font-size:3rem;
+    height:40px;
+    line-height:.8;
+    margin:0 20px -4px;
+    padding:5px 10px;
+    text-decoration:none;
+    transition:background .3s ease;
+    width:50px;
+}
+
+
+
+a[id^="btn"]:last-child {
+    margin-left:-10px;
+}
+
+a[id^="btn"]:hover,
+a[id^="btn"]:active {
+    background-color:#494644;
+    color:#fff;
+    
+}
+
+#btnPrev, #btnNext {
+    position: relative;
+    margin-bottom: 15px;
+    font-size: 40px;
+    margin-right: 5%;
+}
+
+@keyframes animateElement{
+  0% {
+    opacity:0;
+    transform:  translate(0px,50px);
+  }
+  100% {
+    opacity:1;
+    transform:  translate(0px,0px);
+  }
+}@keyframes animateElement2{
+  0% {
+    opacity:0.4;
+    transform:  translate(1px,2px);
+  }
+  100% {
+    opacity:1;
+    transform:  translate(0px,0px);
+  }
+}
+
+@media(max-width: 880px) {
+    #nowPlayingBarContainer{
+        width: 90%;
+    }
+}
